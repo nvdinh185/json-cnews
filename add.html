@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>VinaEnter - Đã Học Là Làm Được</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="lib/jquery-3.6.3.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".header").load("./inc/header.html");
+      $(".right").load("./inc/side-bar.html");
+      $(".footer").load("./inc/footer.html");
+    });
+  </script>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header"></div>
+    <div class="body">
+      <div class="body_resize">
+        <div class="left">
+          <h2>Đăng tin</h2>
+          <form action="#" method="post" id="contactform">
+            <ol>
+              <li>
+                <label for="name">Tên tin*</label>
+                <input id="name" name="name" class="text" />
+              </li>
+              <li>
+                <label for="preview_text">Mô tả*</label>
+                <textarea id="preview_text" name="preview_text" rows="6" cols="50"></textarea>
+              </li>
+
+              <li>
+                <label for="detail_text">Chi tiết*</label>
+                <textarea id="detail_text" name="detail_text" rows="10" cols="50"></textarea>
+              </li>
+
+              <li class="buttons">
+                <input type="submit" name="imageField" id="imageField" value="Đăng tin" class="send" />
+                <div class="clr"></div>
+              </li>
+            </ol>
+          </form>
+        </div>
+
+        <div class="right"></div>
+        <div class="clr"></div>
+      </div>
+    </div>
+
+
+    <div class="footer"></div>
+  </div>
+
+</html>
