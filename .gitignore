@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+# npm config file
+package-lock.json
+
+# uploads file
+uploads/
