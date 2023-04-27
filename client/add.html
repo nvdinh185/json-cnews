@@ -23,20 +23,29 @@
       <div class="body_resize">
         <div class="left">
           <h2>Đăng tin</h2>
-          <form action="#" method="post" id="contactform">
+          <p id="error"></p>
+          <form action="#" method="post" id="news-form">
             <ol>
               <li>
-                <label for="name">Tên tin*</label>
-                <input id="name" name="name" class="text" />
-              </li>
-              <li>
                 <label for="preview_text">Mô tả*</label>
-                <textarea id="preview_text" name="preview_text" rows="6" cols="50"></textarea>
+                <textarea id="preview_text" name="description" rows="6" cols="50" required></textarea>
               </li>
 
               <li>
                 <label for="detail_text">Chi tiết*</label>
-                <textarea id="detail_text" name="detail_text" rows="10" cols="50"></textarea>
+                <textarea id="detail_text" name="detail" rows="10" cols="50" required></textarea>
+              </li>
+
+              <li>
+                <label for="cat">Danh mục tin*</label>
+                <select id="cat" name="cat" required>
+                  <option value="">-- Chọn danh mục --</option>
+                </select>
+              </li>
+
+              <li>
+                <label for="picture">Hình ảnh</label>
+                <input type="file" name="picture" id="picture" value="" />
               </li>
 
               <li class="buttons">
@@ -52,8 +61,10 @@
       </div>
     </div>
 
-
     <div class="footer"></div>
   </div>
+  <script src="lib/axios.min.js"></script>
+  <script src="js/add.js"></script>
+</body>
 
 </html>
