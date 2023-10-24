@@ -9,8 +9,10 @@ async function getData() {
             const newsElement = $('<div class="item"></div>');
             newsElement.html(`
                 <h2><a href="detail.html?did=${news.id}" title="">${news.description}</a></h2>
-                <img src=images/${news.image} alt="" width="585" height="156" />
-                <div class="clr"></div>
+                <a href="detail.html?did=${news.id}" title="">
+                    <img src=images/${news.image} alt="" width="585" height="156" />
+                </a>
+                    <div class="clr"></div>
                 <p>${news.detail}</p>
             `);
 

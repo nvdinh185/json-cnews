@@ -35,7 +35,9 @@ async function getData() {
             const newsElement = $('<div class="item"></div>');
             newsElement.html(`
                 <h2><a href="detail.html?did=${news.id}" title="">${news.description}</a></h2>
-                <img src="images/${news.image}" alt="${news.image}" width="585" height="157" />
+                <a href="detail.html?did=${news.id}" title="">
+                    <img src="images/${news.image}" alt="${news.image}" width="585" height="157" />
+                </a>
                 <div class="clr"></div>
                 <p>${news.detail}</p>
             `);
