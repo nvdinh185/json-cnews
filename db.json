@@ -1,5 +1,5 @@
 {
-  "cnews": [
+  "news": [
     {
       "id": "1",
       "description": "Gia Huy dự thi 'Tài năng lập trình trẻ 2016'",
@@ -78,7 +78,7 @@
       "catId": "2"
     }
   ],
-  "ccategories": [
+  "cat": [
     {
       "id": "1",
       "name": "WEB FONT-END"
