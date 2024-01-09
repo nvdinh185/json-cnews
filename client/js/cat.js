@@ -13,7 +13,6 @@ async function getData() {
     const listNewsElement = $("#list-news-by-cat");
     try {
         var catById = await axios.get(`http://localhost:3000/cat/${cId}`);
-
         catById = catById.data;
 
         var catName = catById.name;
